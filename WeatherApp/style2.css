@@ -1,0 +1,143 @@
+/* CSS code for showWeather.php Page */
+body {
+    background: #643a7a;
+    color: black;
+    text-transform: uppercase;
+}
+
+.frame {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 600px;
+    height: 550px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to top, #40334f, #2f273c, #272232, #201c29);
+    color: #4c4238;
+    font-family: 'overlock', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+.moon {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    top: 45px;
+    left: 55px;
+    border-radius: 50px;
+    background-image: linear-gradient(to left top, #b1b1c5, #928fa3, #746f82, #575162, #3c3444);
+    box-shadow: 0 0 3rem fade-out(#B1B1C5, .8);
+    animation: rise 1s ease-out;
+}
+
+.moon-crater1 {
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 4px solid fade-out(#3C3444, .9);
+    top: 1rem;
+    left: .8rem;
+}
+
+
+.front {
+    position: absolute;
+    z-index: 10;
+    width: 600px;
+    height: 186px;
+    left: 0;
+    bottom: -53px;
+    background: #CBC3E3;
+    box-shadow: -1rem 0 1rem rgba(0, 0, 0, .5);
+    animation: slide 1s;
+    transition: 1s ease-in-out;
+    z-index: 1000;
+}
+
+@keyframes slide {
+
+    0%,
+    45% {
+        transform: translateY(90px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.front .temperature {
+    float: left;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    line-height: 90px;
+}
+
+.front .info {
+    float: left;
+    margin: 2rem 0 0 3rem;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.icons {
+    position: absolute;
+    top: 2rem;
+    left: 7rem;
+    line-height: 20px;
+}
+
+.front .preview {
+    float: right;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 20px;
+    margin: 25px 20px 0 0;
+}
+
+.front .preview tr {
+    padding: 0 3px;
+    text-transform: uppercase;
+}
+
+
+
+.cityName {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    padding: .5rem 0;
+    background: #d1baca;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+h4 {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    font-weight: lighter;
+}

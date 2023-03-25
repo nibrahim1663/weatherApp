@@ -1,0 +1,47 @@
+/* CSS code for getCity.php Page */
+body {
+    background: #643a7a;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 525px;
+    height: 150px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to top, #40334f, #2f273c, #272232, #201c29);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    font-weight: bolder;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+#cityName {
+    width: 250px;
+}
+
+input[type=submit] {
+    width: 90%;
+    border-radius: 25px;
+    font-size: small;
+    background-color: orange;
+    color: black;
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-left: 5%;
+    border-color: orange;
+}
